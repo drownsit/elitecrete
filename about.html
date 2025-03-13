@@ -4,7 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>powerpulse</title>
 <style>
-     @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
 
 :root {
   --bg: ;
@@ -15,10 +15,7 @@
 
   --blur: 1rem;
   --fs: clamp(3rem, 8vw, 7rem);
-  --ls: clamp(-1.75px, -0.25vw, -3.5px);
-}
-
-
+  --ls: clamp(-1.75px, -0.25vw, -3.5px);}
 
 *,
 *::before,
@@ -208,20 +205,24 @@
 
 
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	.head1{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      .head1{
         justify-content: flex-end;
         display: flex;
         position: relative;
@@ -276,10 +277,9 @@ body {
 
 .container23 {
   position: relative;
-  width: 1300px;
+  width: 1000px;
   margin: 0 auto;
   max-height:600px ;
-    margin-top:40px;
 }
 
 .container23 img {vertical-align: middle;
@@ -296,24 +296,106 @@ body {
   padding: 20px;
   
 }
-    .float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:40px;
-	background-color:#25d366;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-  font-size:30px;
-	box-shadow: 2px 2px 3px #999;
-  z-index:100;
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.my-float{
-	margin-top:16px;
+
+
+.containere {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-top: 30px;
+    border-radius: 20px;
 }
+
+.sliderrz-content {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.sliderz {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.sliderz-left {
+    animation-name: slideFromLeft;
+}
+
+.sliderz-right {
+    animation-name: slideFromRight;
+}
+
+@keyframes slideFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.imgz {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+p {
+    margin-top: 15px;
+    font-size: 18px;
+    color:whitesmoke;
+    text-align: center;
+    width: 100%;
+}
+
+.containerl{
+display: none;
+
+}
+.containere{
+display: block;
+
+}
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 500px){
 .hea {
@@ -376,14 +458,13 @@ body {
 .container23 {
   position: relative;
   max-width: 370px;
-  max-height: 350px;
+  max-height: 250px;
   margin: 0 auto;
-    margin-top:15px;
 }
 
 .container23 img {vertical-align: middle; 
 max-height: 250px;
-max-width: 350px;
+max-width: 370px;
 }
 
 .container23 .content23 {
@@ -392,9 +473,9 @@ max-width: 350px;
   background: rgb(0, 0, 0); /* Fallback color */
   background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
   color: #f1f1f1;
-  max-width: 350px;
+  max-width: 370px;
   padding: 2vh;
-  font-size: 5px;
+  font-size: 2px;
   
 }
 
@@ -426,8 +507,8 @@ max-width: 350px;
 }
 
 .titlep {
-  font-size: 50px;
-  font-weight: 800px;
+  font-size: 30px;
+  font-weight: 80;
   letter-spacing: var(--ls);
   position: relative;
   overflow: hidden;
@@ -598,6 +679,96 @@ max-width: 350px;
   100% {
     border-radius: 37% 29% 27% 27% / 28% 25% 41% 37%;
   }
+
+}
+
+
+
+
+ p {
+        font-size: 14px;
+    }
+
+    .containerl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    display: block;
+    padding-top: 20px;
+    padding-left: 0px;
+    max-width: 500px;
+}
+
+.sliderl-content {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+    max-width: 500px;
+    align-items: center;
+}
+
+.slidel {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(100%);
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.slidel-image {
+    animation-name: slideImageUp;
+    padding-right: px;
+
+    max-width: 500px;
+}
+
+.slidel-text {
+    animation-name: slideTextDown;
+}
+
+@keyframes slideImageUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.containere{
+  display: none;
+}
+@keyframes slideTextDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.imgk {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+p {
+    margin-top: 15px;
+    font-size: 18px;
+    color:whitesmoke;
+    text-align: center;
+    width: 100%;
+}
 }
 
 
@@ -608,13 +779,8 @@ max-width: 350px;
 
 
 
-
-
-
-	
-}
-
-   @media only screen and (max-width:1200px){.hea {
+@media only screen and (max-width:1200px){
+    .hea {
     display: none;
 }
 .text {font-size: 22px}
@@ -671,9 +837,10 @@ body {
 
 .container23 {
   position: relative;
-  width: 800px;
+  max-width: 640px;
   margin: 0 auto;
-    margin-top:15px;
+  margin-top: 20px;
+  margin-left: 10px;
 }
 
 .container23 img {vertical-align: middle;}
@@ -716,8 +883,8 @@ body {
 }
 
 .titlep {
-  font-size: 50px;
-  font-weight: bold;
+  font-size: 30px;
+  font-weight: 80;
   letter-spacing: var(--ls);
   position: relative;
   overflow: hidden;
@@ -888,11 +1055,106 @@ body {
   100% {
     border-radius: 37% 29% 27% 27% / 28% 25% 41% 37%;
   }
-
-
-
-					     
 }
+
+
+
+p {
+        font-size: 14px;
+    }
+
+    .containerl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    display: block;
+    padding-top: 20px;
+    max-width: 650px;
+    
+    padding-left: 10px;
+}
+
+.sliderl-content {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+    max-width: 650px;
+    align-items: center;
+    
+}
+
+.slidel {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(100%);
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.slidel-image {
+    animation-name: slideImageUp;
+}
+
+.slidel-text {
+    animation-name: slideTextDown;
+}
+
+@keyframes slideImageUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.containere{
+  display: none;
+}
+@keyframes slideTextDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.imgk {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+p {
+    margin-top: 15px;
+    font-size: 18px;
+    color:whitesmoke;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+   }
+
+
+
+
+
+
+
+
+
 
 
 </style>
@@ -928,6 +1190,34 @@ body {
       
     
 </div>
+	  <div class="containere">
+  <div class="sliderrz-content">
+      <div class="sliderz sliderz-left">
+          <img class="imgz" src=" image6.jpg  " alt="Im">
+         
+      </div>
+      <div class="sliderz sliderz-right">
+         
+          <p>At Power pulse, automation and control are at the heart of <br>how we ensure the efficient and reliable delivery of electricity.<br> By using advanced technologies like smart grids, automated sensors,<br> and real-time monitoring systems, we are able to optimize power distribution, reduce energy loss, and improve response times during outages.
+          </p>
+      </div>
+  </div>
+</div>
+
+
+<div class="containerl">
+<div class="sliderl-content">
+    <div class="slidel slidel-image">
+        <img class="imgk" src="image6.jpg" alt="Im">
+    </div>
+    <div class="slidel slidel-text">
+        <p>At Power pulse, automation and control are at the heart of <br>how we ensure the efficient and reliable delivery of electricity.<br> By using advanced technologies like smart grids, automated sensors,<br> and real-time monitoring systems, we are able to optimize power distribution, reduce energy loss, and improve response times during outages.
+        </p>
+    </div>
+</div>
+</div>
+
+  
     
    
     
