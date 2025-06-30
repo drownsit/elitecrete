@@ -4,6 +4,47 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Philmo rescue</title>
 <style>
+	.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 	   /* Floating call button */
     .call-button {
       position: fixed;
@@ -1233,99 +1274,11 @@ img {vertical-align: middle;}
                     
             </div>
         </div>  
-
-<div>
-
+<div class="container">
+  <img src="img_snow_wide.jpg" alt="Snow" style="width:100%;">
+  
+  <div class="centered">Centered</div>
 </div>
-<div class="head2">
-    <div>
-       
-
-		
-	
-			
-                        
-                    <div class="home2"><h2><p>Philmo Roadside Rescue</p></div>
-                        <div class="home3" ><p>Fast, Local Roadside Assistance — No Membership Needed
-🚗 Stuck on the road? We’ll connect you with a trusted local provider in minutes.
-[📞 Call Now] [📍Request Help Online]</p></div>
-                        
-                        
-                </div> 
-               
-				                     <div>  <div class="slideshow-container" style="padding-top: 20px;">
-
-                    <div class="mySlides"  >
-                      
-                      <img src="image1.jpg" style="width:100%;height: 100%;border-radius:20px;">
-                      
-                    </div>
-                    
-                    <div class="mySlides" >
-                      
-                      <img src="image2.jpg" style="width:100%;height:100%;border-radius:20px;">
-                      
-                    </div>
-                    
-                    <div class="mySlides" >
-                      
-                      <img src="image3.jpg" style="width:100%;height: 100%;border-radius:20px;">
-                      
-                    </div>
-                    
-                    </div>
-                    <br>
-                    
-                    <div style="text-align:center">
-                      <span class="dot"></span> 
-                      <span class="dot"></span> 
-                      <span class="dot"></span> 
-                    </div>
-                    
-                    <script>
-                    let slideIndex = 0;
-                    showSlides();
-                    
-                    function showSlides() {
-                      let i;
-                      let slides = document.getElementsByClassName("mySlides");
-                      let dots = document.getElementsByClassName("dot");
-                      for (i = 0; i < slides.length; i++) {
-                        slides[i].style.display = "none";  
-                      }
-                      slideIndex++;
-                      if (slideIndex > slides.length) {slideIndex = 1}    
-                      for (i = 0; i < dots.length; i++) {
-                        dots[i].className = dots[i].className.replace(" active", "");
-                      }
-                      slides[slideIndex-1].style.display = "block";  
-                      dots[slideIndex-1].className += " active";
-                      setTimeout(showSlides, 2000); // Change image every 2 seconds
-                    }
-                    </script>
-                                 
-            <div class="home7"><h2><p>CONSTRUCTION COMPANY</p></div>
-                <div class="home8"><p>We are a company that deal in the growing world of costruction <br> dedicated to provide engineering
-                            assistance and services.<br> Such services include epoxy resin, urethane, polyaspartic, urethane cement, self-leveler and more .<br>
-                            We have a specialised team ready to give quality services to all our customers</p></div>
-                </div></div>
-
-                <div class="containerr">
-                  <img src="free1.jpg" alt="Avatar" class="imager">
-                  <div class="overlay">
- <h1 class="titlep">Who are we ?
-                      <div class="aurora">
-                        <div class="aurora__item"></div>
-                        <div class="aurora__item"></div>
-                        <div class="aurora__item"></div>
-                        <div class="aurora__item"></div>
-                      </div>
-                    </h1>
-                    <p class="subtitlep">We are a company that deal in the growing world of High TECH Flooring</p>
-                    </div> 
-                </div>
-                 
-</div>   
 
 
 
